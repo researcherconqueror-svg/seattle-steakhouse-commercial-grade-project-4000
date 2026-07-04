@@ -35,7 +35,7 @@ const experiences = [
   {
     id: "main" as const,
     name: "Main Dining Room",
-    tagline: "The Classic Crimson Black Experience",
+    tagline: "The Classic Crimsonwood Experience",
     description: "Our signature dining room featuring vaulted ceilings, warm oak paneling, and an atmosphere of refined elegance.",
     capacity: "2 – 8 guests",
   },

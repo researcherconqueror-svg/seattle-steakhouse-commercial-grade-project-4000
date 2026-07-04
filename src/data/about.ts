@@ -10,7 +10,7 @@ export const chefStory = {
   body1:
     "Marcus Hale spent fifteen years in the kitchens of the world\u2019s great steakhouses \u2014 from Peter Luger in New York to the legendary Teppanyaki masters of Tokyo. He returned to Seattle with a singular vision: a steakhouse that honored the craft of live-fire cooking while embracing the Pacific Northwest\u2019s extraordinary bounty.",
   body2:
-    "In 2018, he partnered with hospitality veteran Elena Voss to open Crimson Black. The concept was simple but uncompromising: source the finest beef available, age it with precision, cook it over genuine flame, and surround it with service so attentive it becomes invisible.",
+    "In 2018, he partnered with hospitality veteran Elena Voss to open Crimsonwood. The concept was simple but uncompromising: source the finest beef available, age it with precision, cook it over genuine flame, and surround it with service so attentive it becomes invisible.",
   body3:
     "Six years later, the vision endures. Every evening, the oak fires are lit at 3 PM. The meats are hand-selected. The wines are decanted. And somewhere in the dining room, a guest is having the best meal of their life.",
 };
@@ -43,9 +43,9 @@ export const values = [
 ];
 
 export const timeline: TimelineEntry[] = [
-  { year: "2016", event: "Marcus Hale and Elena Voss conceptualize Crimson Black after a year of research across Europe and Japan." },
+  { year: "2016", event: "Marcus Hale and Elena Voss conceptualize Crimsonwood after a year of research across Europe and Japan." },
   { year: "2017", event: "The team acquires a landmark Second Avenue building and begins an 18-month renovation." },
-  { year: "2018", event: "Crimson Black opens its doors. Within three months, the restaurant earns a place on Seattle Magazine\u2019s Best New Restaurants list." },
+  { year: "2018", event: "Crimsonwood opens its doors. Within three months, the restaurant earns a place on Seattle Magazine\u2019s Best New Restaurants list." },
   { year: "2020", event: "The Hearth Room and The Cellar private dining spaces are completed, expanding capacity for events." },
   { year: "2022", event: "Wine Spectator recognizes our cellar with its Best of Award of Excellence." },
   { year: "2024", event: "The Terrace opens, adding a waterfront event space with panoramic views of Elliott Bay." },
@@ -55,7 +55,7 @@ export const aboutHero = {
   backgroundImage: "https://images.unsplash.com/photo-1428515613728-6b4607e44363?w=1920&q=80",
   eyebrow: "Our Story",
   heading: "Built on Conviction",
-  body: "Crimson Black was born from a belief that Seattle deserved a steakhouse as ambitious as the city itself.",
+  body: "Crimsonwood was born from a belief that Seattle deserved a steakhouse as ambitious as the city itself.",
 };
 
 export const careers = {

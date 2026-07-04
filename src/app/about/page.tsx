@@ -4,9 +4,9 @@ import type { Metadata } from "next";
 import { aboutHero, chefStory, values, timeline, careers } from "@/data/about";
 
 export const metadata: Metadata = {
-  title: "Our Story | Crimson Black",
+  title: "Our Story | Crimsonwood",
   description:
-    "Discover the story behind Crimson Black — from our Pacific Northwest roots to Seattle's premier steakhouse experience.",
+    "Discover the story behind Crimsonwood — from our Pacific Northwest roots to Seattle's premier steakhouse experience.",
 };
 
 export default function AboutPage() {

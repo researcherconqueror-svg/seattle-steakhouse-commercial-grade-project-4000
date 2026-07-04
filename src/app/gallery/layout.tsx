@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Gallery | Crimson Black",
+  title: "Gallery | Crimsonwood",
   description:
-    "Explore moments from our kitchen, dining room, and private spaces at Crimson Black, Seattle's premier steakhouse.",
+    "Explore moments from our kitchen, dining room, and private spaces at Crimsonwood, Seattle's premier steakhouse.",
 };
 
 export default function GalleryLayout({
