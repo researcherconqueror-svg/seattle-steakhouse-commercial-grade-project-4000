@@ -1,65 +1,123 @@
+import Link from "next/link";
 import Image from "next/image";
+import MenuHighlights from "@/components/MenuHighlights";
+import Testimonials from "@/components/Testimonials";
+import HeroParallax from "@/components/HeroParallax";
+import MotionReveal from "@/components/MotionReveal";
+import SplitTextReveal from "@/components/SplitTextReveal";
+import { philosophy, quote, reservationCTA } from "@/data/home";
 
 export default function Home() {
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
+    <>
+      {/* ═══ Hero — Cinematic Parallax ═══ */}
+      <HeroParallax />
+
+      {/* ═══ Introduction — Asymmetric Split ═══ */}
+      <section className="section-editorial">
+        <div className="max-w-[1400px] mx-auto">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+            {/* Image — takes 7 columns */}
+            <MotionReveal direction="left" className="lg:col-span-7">
+              <div className="relative">
+                <div className="img-zoom overflow-hidden">
+                  <Image
+                    src={philosophy.image}
+                    alt={philosophy.imageAlt}
+                    width={1000}
+                    height={560}
+                    className="w-full h-[400px] md:h-[560px] object-cover"
+                    sizes="(max-width: 1024px) 100vw, 58vw"
+                  />
+                </div>
+                {/* Floating accent */}
+                <div className="absolute -bottom-6 -right-6 lg:-right-12 w-2/3 h-2/3 border border-[var(--gold)]/10 -z-10" />
+              </div>
+            </MotionReveal>
+
+            {/* Text — takes 4 columns with offset */}
+            <MotionReveal direction="right" delay={0.15} className="lg:col-span-4 lg:col-start-9">
+              <p className="label-eyebrow text-[var(--gold)] mb-5">{philosophy.eyebrow}</p>
+              <h2 className="mb-6">
+                <SplitTextReveal text={philosophy.headingLine1} className="display-subsection text-[var(--cream)] block" />
+                <SplitTextReveal text={philosophy.headingLine2} className="display-subsection text-[var(--gold)] block" delay={0.15} />
+              </h2>
+              <div className="gold-line mb-8" />
+              <p className="body-editorial mb-6">
+                {philosophy.body1}
+              </p>
+              <p className="body-editorial mb-10">
+                {philosophy.body2}
+              </p>
+              <Link
+                href={philosophy.ctaHref}
+                className="inline-flex items-center gap-3 text-[var(--gold)] label-nav hover:gap-5 transition-all duration-500 cursor-expand"
+              >
+                {philosophy.ctaText}
+                <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
+                </svg>
+              </Link>
+            </MotionReveal>
+          </div>
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
+      </section>
+
+      {/* ═══ Menu Highlights ═══ */}
+      <MenuHighlights />
+
+      {/* ═══ Full-Bleed Quote ═══ */}
+      <section className="relative py-40 md:py-56 overflow-hidden">
+        <div className="absolute inset-0">
+          <Image
+            src={quote.backgroundImage}
+            alt=""
+            fill
+            className="object-cover"
+            sizes="100vw"
+          /
+            priority
+            fetchPriority="high"
+            quality={60}>
         </div>
-      </main>
-    </div>
+        <div className="absolute inset-0 bg-[var(--bg-primary)]/85" />
+        <div className="absolute inset-0 film-grain" />
+        <div className="relative z-10 max-w-3xl mx-auto px-6 text-center">
+          <MotionReveal direction="up" duration={1.2}>
+            <p className="label-eyebrow text-[var(--gold)] mb-8">{quote.eyebrow}</p>
+            <blockquote className="font-[var(--font-display)] text-2xl sm:text-3xl md:text-[2.75rem] leading-[1.15] text-[var(--cream)] mb-8 italic font-light">
+              &ldquo;{quote.text}&rdquo;
+            </blockquote>
+            <div className="gold-line mx-auto mb-6" />
+            <p className="label-caption tracking-[0.2em]">
+              — {quote.author}
+            </p>
+          </MotionReveal>
+        </div>
+      </section>
+
+      {/* ═══ Testimonials ═══ */}
+      <Testimonials />
+
+      {/* ═══ Reservation CTA ═══ */}
+      <section className="section-editorial">
+        <div className="max-w-3xl mx-auto text-center">
+          <MotionReveal direction="up">
+            <p className="label-eyebrow text-[var(--gold)] mb-6">{reservationCTA.eyebrow}</p>
+            <h2 className="mb-6">
+              <SplitTextReveal text={reservationCTA.headingLine1} className="display-section text-[var(--cream)] block" />
+              <SplitTextReveal text={reservationCTA.headingLine2} className="display-section text-[var(--gold)] block" delay={0.15} />
+            </h2>
+            <div className="gold-line-wide mx-auto mb-8" />
+            <p className="body-editorial max-w-lg mx-auto mb-12">
+              {reservationCTA.body}
+            </p>
+            <Link href={reservationCTA.ctaHref} className="btn-gold-filled cursor-expand">
+              {reservationCTA.ctaText}
+            </Link>
+          </MotionReveal>
+        </div>
+      </section>
+    </>
   );
 }
