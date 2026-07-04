@@ -4,7 +4,7 @@ import type { Metadata } from "next";
 import { menuHighlights, steakItems, seafoodItems, sides, desserts, wineHighlights } from "@/data/menu";
 
 export const metadata: Metadata = {
-  title: "Dinner Menu | Ember & Oak",
+  title: "Dinner Menu | Nexus Prime",
   description: "Explore our complete dinner menu featuring prime dry-aged steaks, seafood, sides, and an award-winning wine list.",
 };
 
@@ -175,7 +175,7 @@ export default function MenuPage() {
       <section className="py-16 md:py-24 bg-[var(--bg-surface)]">
         <div className="max-w-3xl mx-auto text-center reveal">
           <p className="display-subsection text-[var(--cream)] mb-6">
-            Ready to experience Ember & Oak?
+            Ready to experience Nexus Prime?
           </p>
           <Link href="/reservations" className="btn-gold-filled">
             Reserve Your Table

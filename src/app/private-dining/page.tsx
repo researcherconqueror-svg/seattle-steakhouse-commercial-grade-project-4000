@@ -4,7 +4,7 @@ import type { Metadata } from "next";
 import { spaces, inclusions, privateDiningHero } from "@/data/private-dining";
 
 export const metadata: Metadata = {
-  title: "Private Dining | Ember & Oak",
+  title: "Private Dining | Nexus Prime",
   description: "Host your next event in one of our three private dining spaces, each designed for an unforgettable experience.",
 };
 

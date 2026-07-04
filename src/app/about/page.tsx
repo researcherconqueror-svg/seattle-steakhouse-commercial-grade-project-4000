@@ -4,9 +4,9 @@ import type { Metadata } from "next";
 import { aboutHero, chefStory, values, timeline, careers } from "@/data/about";
 
 export const metadata: Metadata = {
-  title: "Our Story | Ember & Oak",
+  title: "Our Story | Nexus Prime",
   description:
-    "Discover the story behind Ember & Oak — from our Pacific Northwest roots to Seattle's premier steakhouse experience.",
+    "Discover the story behind Nexus Prime — from our Pacific Northwest roots to Seattle's premier steakhouse experience.",
 };
 
 export default function AboutPage() {

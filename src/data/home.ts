@@ -1,6 +1,6 @@
 export const heroContent = {
   eyebrow: "Seattle's Premier Steakhouse",
-  titleLine1: "Ember",
+  titleLine1: "Nexus",
   titleLine2: "Oak",
   body: "Where fire meets craft. An evening of prime cuts, rare vintages, and the art of the unforgettable.",
   ctaPrimary: { text: "Reserve Your Table", href: "/reservations" },
@@ -13,13 +13,13 @@ export const philosophy = {
   headingLine1: "Crafted by Fire,",
   headingLine2: "Defined by Detail",
   body1:
-    "At Ember & Oak, we believe a great steakhouse is more than the quality of its beef — it\u2019s the precision of every moment. From the warmth of the greeting at our door to the final pour of a perfectly paired vintage, every detail is orchestrated with the same care we give our 45-day dry-aged prime cuts.",
+    "At Nexus Prime, we believe a great steakhouse is more than the quality of its beef — it\u2019s the precision of every moment. From the warmth of the greeting at our door to the final pour of a perfectly paired vintage, every detail is orchestrated with the same care we give our 45-day dry-aged prime cuts.",
   body2:
-    "Our kitchen sources exclusively from Northwest ranches and heritage farms, where sustainable practices yield beef of extraordinary marbling and flavor. Paired with a cellar of over 400 labels and a team devoted to the art of hospitality, Ember & Oak is where Seattle comes to celebrate the extraordinary.",
+    "Our kitchen sources exclusively from Northwest ranches and heritage farms, where sustainable practices yield beef of extraordinary marbling and flavor. Paired with a cellar of over 400 labels and a team devoted to the art of hospitality, Nexus Prime is where Seattle comes to celebrate the extraordinary.",
   ctaText: "Our Full Story",
   ctaHref: "/about",
   image: "https://images.unsplash.com/photo-1600891964092-4316c288032e?w=1000&q=85",
-  imageAlt: "Ember & Oak interior",
+  imageAlt: "Nexus Prime interior",
 };
 
 export const quote = {

@@ -39,7 +39,7 @@ export default function Navbar() {
             {/* Logo */}
             <Link href="/" className="flex flex-col items-start group cursor-expand">
               <span className="font-[var(--font-display)] text-[1.1rem] tracking-[0.12em] uppercase text-[var(--gold)] transition-colors duration-500 group-hover:text-[var(--gold-light)] font-light italic">
-                Ember & Oak
+                Nexus Prime
               </span>
               <span className="label-caption mt-0.5 tracking-[0.3em] text-[0.55rem]">
                 Seattle

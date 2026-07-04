@@ -25,7 +25,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Ember & Oak — Seattle's Premier Steakhouse",
+  title: "Nexus Prime — Seattle's Premier Steakhouse",
   description:
     "An ultra-luxury dining experience in the heart of Seattle. Prime cuts, rare vintages, and an atmosphere crafted for unforgettable evenings.",
   keywords: [
