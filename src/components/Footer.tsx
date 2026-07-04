@@ -9,7 +9,7 @@ export default function Footer() {
           {/* Brand — takes 5 cols */}
           <div className="lg:col-span-5">
             <h3 className="font-[var(--font-display)] text-xl tracking-[0.08em] uppercase text-[var(--gold)] mb-5 font-light italic">
-              Nexus Prime
+              Crimson Black
             </h3>              <p className="body-editorial max-w-sm mb-8">
               Seattle&apos;s premier destination for prime steaks, rare vintages,
               and unforgettable evenings. Where every detail is crafted with
@@ -86,7 +86,7 @@ export default function Footer() {
 
         {/* Bottom */}
         <div className="mt-12 pt-8 border-t border-[var(--border)] flex flex-col md:flex-row items-center justify-between gap-4">            <p className="text-[0.7rem] text-[var(--text-muted)] font-light">
-              © {new Date().getFullYear()} Nexus Prime. All rights reserved.
+              © {new Date().getFullYear()} Crimson Black. All rights reserved.
             </p>
             <div className="flex items-center gap-8">
               <a href={contactInfo.phoneHref} className="text-[0.7rem] text-[var(--text-muted)] hover:text-[var(--gold)] transition-colors font-light">

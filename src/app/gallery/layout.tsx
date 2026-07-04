@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Gallery | Nexus Prime",
+  title: "Gallery | Crimson Black",
   description:
-    "Explore moments from our kitchen, dining room, and private spaces at Nexus Prime, Seattle's premier steakhouse.",
+    "Explore moments from our kitchen, dining room, and private spaces at Crimson Black, Seattle's premier steakhouse.",
 };
 
 export default function GalleryLayout({

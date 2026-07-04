@@ -27,7 +27,7 @@ export const sides: MenuItem[] = [
   { name: "Potato Gratin", desc: "Yukon gold, gruy\u00e8re, garlic, fresh chives.", price: "14" },
   { name: "Grilled Asparagus", desc: "Lemon zest, shaved parmesan.", price: "14" },
   { name: "Oak-Grilled Corn", desc: "Chipotle butter, cotija cheese, lime.", price: "12" },
-  { name: "Nexus Prime Fries", desc: "Hand-cut, herb salt, truffle aioli.", price: "12" },
+  { name: "Crimson Black Fries", desc: "Hand-cut, herb salt, truffle aioli.", price: "12" },
 ];
 
 export const desserts: MenuItem[] = [
