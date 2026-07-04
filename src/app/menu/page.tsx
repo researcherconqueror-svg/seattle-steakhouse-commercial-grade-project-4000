@@ -78,10 +78,10 @@ export default function MenuPage() {
             fill
             className="object-cover opacity-20"
             sizes="100vw"
-          /
-            priority
+          priority
             fetchPriority="high"
-            quality={60}>
+            quality={60}
+          />
         </div>
         <div className="absolute inset-0 bg-gradient-to-b from-[var(--bg-primary)] via-[var(--bg-primary)]/80 to-[var(--bg-primary)]" />
         <div className="relative z-10 max-w-4xl mx-auto px-6 text-center">

@@ -75,10 +75,10 @@ export default function Home() {
             fill
             className="object-cover"
             sizes="100vw"
-          /
-            priority
+          priority
             fetchPriority="high"
-            quality={60}>
+            quality={60}
+          />
         </div>
         <div className="absolute inset-0 bg-[var(--bg-primary)]/85" />
         <div className="absolute inset-0 film-grain" />
