@@ -3,9 +3,9 @@ import type { Metadata } from "next";
 import { contactHero, hours, details, directions } from "@/data/contact";
 
 export const metadata: Metadata = {
-  title: "Contact & Location | Crimsonwood",
+  title: "Contact & Location | Crimson Red Wood",
   description:
-    "Find Crimsonwood at 1201 Second Avenue in the heart of downtown Seattle. View hours, directions, and get in touch.",
+    "Find Crimson Red Wood at 1201 Second Avenue in the heart of downtown Seattle. View hours, directions, and get in touch.",
 };
 
 export default function ContactPage() {
@@ -53,7 +53,7 @@ export default function ContactPage() {
                   allowFullScreen
                   loading="lazy"
                   referrerPolicy="no-referrer-when-downgrade"
-                  title="Crimsonwood location"
+                  title="Crimson Red Wood location"
                 />
               </div>
             </div>

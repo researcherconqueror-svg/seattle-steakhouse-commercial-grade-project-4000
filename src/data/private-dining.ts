@@ -40,7 +40,7 @@ export const inclusions = [
 ];
 
 export const privateDiningHero = {
-  backgroundImage: "https://images.unsplash.com/photo-1578474846511-04ba529f0b88?w=1920&q=80",
+  backgroundImage: "https://images.unsplash.com/photo-1578474846511-04ba529f0b88?w=1280&q=80",
   eyebrow: "Private Events",
   heading: "Private Dining",
   body: "Three distinct spaces, each crafted for occasions that deserve more than ordinary.",

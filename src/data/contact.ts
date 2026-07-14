@@ -19,18 +19,18 @@ export const details: ContactDetail[] = [
   },
   {
     label: "Email",
-    value: "reservations@emberandoak.com",
-    href: "mailto:reservations@emberandoak.com",
+    value: "reservations@crimsonredwood.com",
+    href: "mailto:reservations@crimsonredwood.com",
   },
   {
     label: "Private Events",
-    value: "events@emberandoak.com",
-    href: "mailto:events@emberandoak.com",
+    value: "events@crimsonredwood.com",
+    href: "mailto:events@crimsonredwood.com",
   },
 ];
 
 export const contactHero = {
-  backgroundImage: "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=1920&q=80",
+  backgroundImage: "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=1280&q=80",
   eyebrow: "Visit Us",
   heading: "Contact",
   body: "We look forward to welcoming you. For immediate assistance, please call or email us directly.",

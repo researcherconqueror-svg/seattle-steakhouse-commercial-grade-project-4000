@@ -66,8 +66,11 @@ export default function HeroParallax() {
             transition={{ duration: 1.2, delay: 0.5, ease: [0.25, 0.1, 0.25, 1] }}
           >
             {heroContent.titleLine1}
-            <span className="text-[var(--gold)] mx-3 text-[0.5em] font-light not-italic">&amp;</span>
-            {heroContent.titleLine2}
+            {heroContent.titleLine2 && (
+              <span className="block text-[0.4em] tracking-widest text-[var(--gold)] mt-4 font-light uppercase">
+                {heroContent.titleLine2}
+              </span>
+            )}
           </motion.h1>
           <motion.div
             className="gold-line-wide mb-8"

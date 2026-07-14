@@ -4,7 +4,7 @@ import type { Metadata } from "next";
 import { menuHighlights, steakItems, seafoodItems, sides, desserts, wineHighlights } from "@/data/menu";
 
 export const metadata: Metadata = {
-  title: "Dinner Menu | Crimsonwood",
+  title: "Dinner Menu | Crimson Red Wood",
   description: "Explore our complete dinner menu featuring prime dry-aged steaks, seafood, sides, and an award-winning wine list.",
 };
 
@@ -73,7 +73,7 @@ export default function MenuPage() {
       <section className="relative pt-32 pb-20 md:pt-40 md:pb-28">
         <div className="absolute inset-0">
           <Image
-            src="https://images.unsplash.com/photo-1558030006-450675393462?w=1920&q=80"
+            src="https://images.unsplash.com/photo-1558030006-450675393462?w=1280&q=80"
             alt=""
             fill
             className="object-cover opacity-20"
@@ -175,7 +175,7 @@ export default function MenuPage() {
       <section className="py-16 md:py-24 bg-[var(--bg-surface)]">
         <div className="max-w-3xl mx-auto text-center reveal">
           <p className="display-subsection text-[var(--cream)] mb-6">
-            Ready to experience Crimsonwood?
+            Ready to experience Crimson Red Wood?
           </p>
           <Link href="/reservations" className="btn-gold-filled">
             Reserve Your Table

@@ -109,7 +109,7 @@ export default function GalleryPage() {
       <section className="relative pt-32 pb-16 md:pt-40 md:pb-24">
         <div className="absolute inset-0">
           <Image
-            src="https://images.unsplash.com/photo-1600891964092-4316c288032e?w=1920&q=80"
+            src="https://images.unsplash.com/photo-1600891964092-4316c288032e?w=1280&q=80"
             alt=""
             fill
             className="object-cover opacity-10"

@@ -4,7 +4,7 @@ import type { Metadata } from "next";
 import { spaces, inclusions, privateDiningHero } from "@/data/private-dining";
 
 export const metadata: Metadata = {
-  title: "Private Dining | Crimsonwood",
+  title: "Private Dining | Crimson Red Wood",
   description: "Host your next event in one of our three private dining spaces, each designed for an unforgettable experience.",
 };
 

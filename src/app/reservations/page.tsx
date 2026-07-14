@@ -6,6 +6,7 @@ import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { z } from "zod";
 import { motion, AnimatePresence } from "motion/react";
+import { bookReservation } from "@/app/actions/bookReservation";
 
 /* ── Zod Schema ── */
 const reservationSchema = z.object({
@@ -35,7 +36,7 @@ const experiences = [
   {
     id: "main" as const,
     name: "Main Dining Room",
-    tagline: "The Classic Crimsonwood Experience",
+    tagline: "The Classic Crimson Red Wood Experience",
     description: "Our signature dining room featuring vaulted ceilings, warm oak paneling, and an atmosphere of refined elegance.",
     capacity: "2 – 8 guests",
   },
@@ -68,6 +69,8 @@ export default function ReservationsPage() {
   const [step, setStep] = useState(1);
   const [direction, setDirection] = useState(1);
   const [submitted, setSubmitted] = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitError, setSubmitError] = useState<string | null>(null);
 
   const {
     register,
@@ -114,8 +117,27 @@ export default function ReservationsPage() {
     setStep((s) => Math.max(s - 1, 1));
   };
 
-  const onSubmit = () => {
-    setSubmitted(true);
+  const onSubmit = async () => {
+    setIsSubmitting(true);
+    setSubmitError(null);
+    try {
+      const d = getValues();
+      await bookReservation({
+        date: d.date,
+        time: d.time,
+        partySize: d.partySize,
+        experience: d.experience,
+        name: d.name,
+        email: d.email,
+        phone: d.phone,
+        requests: d.requests,
+      });
+      setSubmitted(true);
+    } catch (err) {
+      setSubmitError(err instanceof Error ? err.message : "Something went wrong. Please try again.");
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   /* ── Confirmed: Booking Ticket ── */
@@ -225,7 +247,7 @@ export default function ReservationsPage() {
       <section className="relative pt-32 pb-16 md:pt-40 md:pb-20">
         <div className="absolute inset-0">
           <Image
-            src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=1920&q=80"
+            src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=1280&q=80"
             alt=""
             fill
             className="object-cover opacity-15"
@@ -470,10 +492,25 @@ export default function ReservationsPage() {
                     </label>
                   </div>
 
+                  {submitError && (
+                    <div className="bg-red-500/10 border border-red-500/30 rounded-sm p-4 text-center">
+                      <p className="text-red-400 text-sm">{submitError}</p>
+                    </div>
+                  )}
                   <div className="flex gap-4">
-                    <button type="button" onClick={goBack} className="btn-gold flex-1">Back</button>
-                    <button type="submit" className="btn-gold-filled flex-1">
-                      Confirm Reservation
+                    <button type="button" onClick={goBack} className="btn-gold flex-1" disabled={isSubmitting}>Back</button>
+                    <button type="submit" className="btn-gold-filled flex-1 disabled:opacity-50" disabled={isSubmitting}>
+                      {isSubmitting ? (
+                        <span className="flex items-center justify-center gap-2">
+                          <svg className="animate-spin w-4 h-4" fill="none" viewBox="0 0 24 24">
+                            <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4" />
+                            <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4z" />
+                          </svg>
+                          Confirming...
+                        </span>
+                      ) : (
+                        "Confirm Reservation"
+                      )}
                     </button>
                   </div>
                 </form>

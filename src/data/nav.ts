@@ -33,7 +33,7 @@ export const footerHours = {
 export const contactInfo = {
   phone: "(206) 555-1892",
   phoneHref: "tel:+12065551892",
-  email: "reservations@emberandoak.com",
-  emailHref: "mailto:reservations@emberandoak.com",
+  email: "reservations@crimsonredwood.com",
+  emailHref: "mailto:reservations@crimsonredwood.com",
   address: "1201 Second Avenue, Seattle, WA 98101",
 };
