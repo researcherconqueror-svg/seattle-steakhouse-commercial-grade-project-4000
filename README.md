@@ -199,7 +199,7 @@ seattle-steakhouse/
 │       └── resend.ts         # Email client
 ├── public/                    # Static assets
 ├── next.config.ts            # Next.js configuration
-├── tailwind.config.ts        # Tailwind configuration
+├── postcss.config.mjs        # Tailwind CSS v4 config
 └── package.json
 ```
 
@@ -220,7 +220,7 @@ seattle-steakhouse/
 
 ## 📄 License
 
-This project is proprietary. All rights reserved.
+MIT
 
 ---
 
